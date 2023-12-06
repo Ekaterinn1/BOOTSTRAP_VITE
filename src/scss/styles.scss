@@ -3,12 +3,20 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
-$primary: $indigo;
+/* Selleks, et need värvid ka kasutusele võetaks, defineerin nad ka Scheme-colors masiivis */
+$primary: #99008a;
 $secondary: #F2E911;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
 );
+
+//Lisasin brandi
+$brand: (
+  "brand" : #99008a
+);
+
+$theme-colors: map-merge($theme-colors , $brand );
 
 @import "bootstrap/scss/bootstrap";
